@@ -1,8 +1,8 @@
 const path = require('path')
 module.exports = {
   version: "3.7",
-  title: "omnigen2.git",
-  description: "",
+  title: "Omnigen 2",
+  description: "Unified Image Understanding and Generation. Text-to-Image Generation, In-context Generation, Instruction-guided Image Editing, Visual Understanding (Minimum Requirements 12GBV RAM / 48GB RAM, Recommended Requirements 24GB VRAM / 32GB RAM)",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
@@ -65,10 +65,23 @@ module.exports = {
         }]
       } else {
         return [{
-          default: true,
           icon: "fa-solid fa-power-off",
           text: "Start",
-          href: "start.js",
+          menu: [{
+            icon: "fa-solid fa-power-off",
+            text: "Start 24GB VRAM / 32GB RAM",
+            href: "start.js",
+            params: {
+              mode: ""
+            }
+          }, {
+            icon: "fa-solid fa-power-off",
+            text: "Start 12GB VRAM / 48GB RAM",
+            href: "start.js",
+            params: {
+              mode: "--enable_model_cpu_offload"
+            }
+          }]
         }, {
           icon: "fa-solid fa-plug",
           text: "Update",
