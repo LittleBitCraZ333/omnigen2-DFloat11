@@ -1,13 +1,14 @@
 {
-  "links": [
-    {
-      "title": "github",
-      "value": "https://github.com/https://github.com/6Morpheus6"
-    },
-    {
-      "title": "bitcoin",
-      "value": "1DdQdK4SfyJ7dZ64eiw2cPzsEigmbQ2CeW"
-    }
-  ],
-  "posts": []
-}
+  "posts": [],
+    "links": [{
+      "title": "Morpheus",
+      "links":[{
+        "title": "Github",
+        "value": "https://github.com/6Morpheus6"
+      },
+      {
+        "type": "bitcoin",
+        "value": "1DdQdK4SfyJ7dZ64eiw2cPzsEigmbQ2CeW"
+      }]
+    }]
+  }
