@@ -4,7 +4,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/VectorSpaceLab/OmniGen2 app",
+          "git clone https://github.com/LeanModels/OmniGen2-DFloat11 app",
         ]
       }
     },
